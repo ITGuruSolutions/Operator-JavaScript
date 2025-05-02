@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Operators With Examples</title>
+  <link rel="shortcut icon" href="logo @ITGuruSolutions.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #d32f2f;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ef5350;
+      color: white;
+    }
+
+    code {
+      background-color: #fff3e0;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .example {
+      background: #fff;
+      border-left: 4px solid #2196F3;
+      padding: 12px 16px;
+      margin: 20px 0;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+
+    .example pre {
+      background: #212121;
+      color: #12e076;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    .example h3 {
+      margin-top: 0;
+      color: #1565c0;
+    }
+
+    .code-runner {
+      margin-top: 40px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 140px;
+      font-family: monospace;
+      font-size: 15px;
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      background: #fefefe;
+    }
+
+    button {
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #b71c1c;
+    }
+
+    pre#output {
+      background: #000;
+      color: #76ff03;
+      padding: 14px;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✅ JavaScript Operators — Easy Guide with Examples  By ITGuruSolutions   </h1>
+  <p>Operators are tools used in JavaScript to perform operations on values or variables. Let's understand them one by one with examples.</p>
+
+  <h2>1️⃣ Arithmetic Operators</h2>
+  <table>
+    <tr><th>Operator</th><th>Use</th><th>Example</th><th>Result</th></tr>
+    <tr><td>+</td><td>Addition</td><td><code>5 + 3</code></td><td>8</td></tr>
+    <tr><td>-</td><td>Subtraction</td><td><code>9 - 2</code></td><td>7</td></tr>
+    <tr><td>*</td><td>Multiplication</td><td><code>4 * 2</code></td><td>8</td></tr>
+    <tr><td>/</td><td>Division</td><td><code>10 / 2</code></td><td>5</td></tr>
+    <tr><td>%</td><td>Remainder</td><td><code>7 % 3</code></td><td>1</td></tr>
+    <tr><td>**</td><td>Exponent</td><td><code>2 ** 4</code></td><td>16</td></tr>
+  </table>
+
+  <div class="example">
+    <h3>Example: Add and Multiply</h3>
+    <pre><code>let x = 10;
+let y = 3;
+
+let sum = x + y;
+let multiply = x * y;
+
+console.log("Sum:", sum);
+console.log("Product:", multiply);</code></pre>
+  </div>
+
+  <h2>2️⃣ Assignment Operators</h2>
+  <table>
+    <tr><th>Operator</th><th>Use</th><th>Example</th><th>Result</th></tr>
+    <tr><td>=</td><td>Assign</td><td><code>let a = 5;</code></td><td>a = 5</td></tr>
+    <tr><td>+=</td><td>Add & assign</td><td><code>a += 3</code></td><td>a = 8</td></tr>
+    <tr><td>-=</td><td>Subtract & assign</td><td><code>a -= 2</code></td><td>a = 6</td></tr>
+    <tr><td>*=</td><td>Multiply & assign</td><td><code>a *= 2</code></td><td>a = 12</td></tr>
+    <tr><td>/=</td><td>Divide & assign</td><td><code>a /= 3</code></td><td>a = 4</td></tr>
+  </table>
+
+  <div class="example">
+    <h3>Example: Assignment in Action</h3>
+    <pre><code>let score = 10;
+score += 5;
+console.log(score); // 15
+
+score *= 2;
+console.log(score); // 30</code></pre>
+  </div>
+
+  <h2>3️⃣ Comparison Operators</h2>
+  <table>
+    <tr><th>Operator</th><th>Meaning</th><th>Example</th><th>Result</th></tr>
+    <tr><td>==</td><td>Equal (value)</td><td><code>5 == "5"</code></td><td>true</td></tr>
+    <tr><td>===</td><td>Strict Equal</td><td><code>5 === "5"</code></td><td>false</td></tr>
+    <tr><td>!=</td><td>Not equal</td><td><code>5 != 3</code></td><td>true</td></tr>
+    <tr><td>!==</td><td>Strict not equal</td><td><code>5 !== "5"</code></td><td>true</td></tr>
+    <tr><td>&gt;</td><td>Greater than</td><td><code>8 > 4</code></td><td>true</td></tr>
+    <tr><td>&lt;</td><td>Less than</td><td><code>2 < 5</code></td><td>true</td></tr>
+  </table>
+
+  <div class="example">
+    <h3>Example: Compare Numbers and Strings</h3>
+    <pre><code>console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+console.log(7 > 2);      // true</code></pre>
+  </div>
+
+  <h2>4️⃣ Logical Operators</h2>
+  <table>
+    <tr><th>Operator</th><th>Meaning</th><th>Example</th><th>Result</th></tr>
+    <tr><td>&&</td><td>AND</td><td><code>true && false</code></td><td>false</td></tr>
+    <tr><td>||</td><td>OR</td><td><code>true || false</code></td><td>true</td></tr>
+    <tr><td>!</td><td>NOT</td><td><code>!true</code></td><td>false</td></tr>
+  </table>
+
+  <div class="example">
+    <h3>Example: Logical Conditions</h3>
+    <pre><code>let isLoggedIn = true;
+let hasAccess = false;
+
+console.log(isLoggedIn && hasAccess); // false
+console.log(isLoggedIn || hasAccess); // true
+console.log(!isLoggedIn);             // false</code></pre>
+  </div>
+
+  <div class="code-runner">
+    <h2>🧪 Test Your Code Below</h2>
+    <textarea id="codeArea">// Try JavaScript here or Follow @ITGuruSolutions 
+let a = 5;
+let b = 2;
+console.log("Sum:", a + b);
+console.log("Power:", a ** b);
+console.log("Compare:", a > b);</textarea>
+    <button onclick="runCode()">Run Code</button>
+    <pre id="output"></pre>
+  </div>
+
+  <script>
+    function runCode() {
+      const userCode = document.getElementById('codeArea').value;
+      const output = document.getElementById('output');
+      try {
+        let result = '';
+        const originalLog = console.log;
+        console.log = (...args) => result += args.join(' ') + '\n';
+        eval(userCode);
+        console.log = originalLog;
+        output.textContent = result;
+      } catch (e) {
+        output.textContent = 'Error: ' + e.message;
+      }
+    }
+  </script>
+
+</body>
+</html>
